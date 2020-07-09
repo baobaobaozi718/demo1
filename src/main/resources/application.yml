@@ -1,0 +1,59 @@
+
+
+
+
+#指定默认的环境策略
+spring:
+  profiles:
+    active: test
+---
+spring:
+  profiles: test 
+server:
+  port: 80
+  servlet:
+    context-path: / #项目发布路径信息,默认条件下/跟目录
+    #tomcat服务器进行发布默认发布路径地址webapps目录下
+    #/  root项目的路径
+    #/jt 
+    
+ # 指定用户配置文件信息
+msg:
+  username: 刘
+  age:  24
+    
+    
+--- #标识配置文件环境的分割   
+spring:
+  profiles: prod   
+server:
+   port: 8080
+   servlet:
+    context-path: / #项目发布路径信息,默认条件下/跟目录
+    #tomcat服务器进行发布默认发布路径地址webapps目录下
+    #/  root项目的路径
+    #/jt 
+    
+ # 指定用户配置文件信息
+msg:
+  username: 刘已将
+  age:  40
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
